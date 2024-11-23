@@ -1,0 +1,141 @@
+/* || GENERAL STYLES */
+
+:root {
+    --bg_dim: #1e2326;
+    --bg0: #1e2326;
+    --bg1: #2e383c;
+    --red: #e67e80;
+    --blue: #7fbbb3;
+    --purple: #d699b6;
+    --fg: #d3c6aa;
+    --grey0: #7a8478;
+    --grey1: #859289;
+    --grey2: #9da9a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--bg0);
+    color: var(--fg);
+    font-family: Arial, sans-serif;
+    font-size: 110%;
+    width: 42em;
+    /* top | right | bottom | left, centres the element */
+    margin: 3em auto 2em auto;
+    line-height: 1.5; /* minimum value for accessibility */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+p {
+    /* top and bottom | left and right */
+    margin: 1em 0;
+    line-height: 1.5; /* minimum value for accessibilty */
+}
+
+a {
+    color: var(--blue);
+}
+
+a:hover {
+    color: var(--fg);
+}
+
+a:visited {
+    color: var(--purple);
+}
+
+/* || Utilities */
+
+.title {
+    color: var(--red);
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+.title a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+.title a:hover {
+    color: var(--fg);
+}
+
+.title nav a {
+    color: var(--grey2);
+    margin-left: 1em;
+}
+
+.meta {
+    color: var(--grey2);
+}
+
+/* || Home */
+
+ul.posts {
+    list-style-type: none;
+    margin-bottom: 2em;
+}
+
+ul.posts li {
+    line-height: 1.75;
+}
+
+ul.posts span {
+    color: var(--grey2);
+    font-family: Monaco, "Courier New", monospace;
+    font-size: 80%;
+}
+
+/* || Posts */
+
+#post pre {
+    border: 1px solid var(--grey1);
+    background-color: var(--bg1);
+}
+
+#post ul, #post ol {
+    margin-left: 1.35em;
+}
+
+#post code {
+    border: none;
+}
+
+#post img {
+    max-width: 42em;
+    /* top and bottom \ left and right */
+    padding: 1em 0;
+}
+
+#post pre.terminal {
+    border: 1px solid var(--fg);
+    background-color: var(--bg_dim);
+}
+
+#post pre.terminal code {
+    background-color: var(--bg_dim);
+}
+
+#related {
+    margin-top: 2em;
+}
+
+#related h2 {
+    margin-bottom: 1em;
+}
