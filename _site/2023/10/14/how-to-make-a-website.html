@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How To Make A Website</title>
+        <title>How to make a website</title>
         <link rel="stylesheet" href="/assets/css/screen.css">
     </head>
     <body>
@@ -18,12 +18,11 @@
     
 </nav>
         </div>
-        <h1>How To Make A Website</h1>
-<p class="meta">14 Oct 2023</p>
-
-<p class="meta">14 October 2023</p>
-
-<p>In this post, I’ll walk through the steps to create a website and host it online, with particular attention to considerations relevant for graduate students in the Faculty of Mathematics at Waterloo.</p>
+        <div id="post">
+    <h1>How to make a website</h1>
+    <p class="meta">14 Oct 2023</p>
+    
+    <p>In this post, I’ll walk through the steps to create a website and host it online, with particular attention to considerations relevant for graduate students in the Faculty of Mathematics at Waterloo.</p>
 
 <h2 id="building-the-website">Building the website</h2>
 
@@ -32,7 +31,7 @@
 <p>I used <a href="https://jekyllrb.com">Jekyll</a>, which is not too far off from coding from scratch, but has some nice features that make some aspects easier. I found <a href="https://developer.mozilla.org/en-US/docs/Learn">MDN Web Docs</a> to be a great resource for learning HTML, CSS and Javascript.</p>
 
 <p>To ensure the website works on the servers provided by the University of Waterloo, you will need to use relative URLs. On Jekyll this is achieved by adding the following property in the configuration file:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>baseurl: /~&lt;WatIAMid&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>baseurl: /~[WatIAMid]
 relativeURLs: true
 </code></pre></div></div>
 
@@ -56,36 +55,37 @@ git commit -m "Initial commit" # Commit staged files to the repository</code>
 
 <p>Create a remote repository on Github. Once this is finished, link the remote repository to the local one by returning to the terminal and running the commands on the repository page to ‘push an existing repository from the command line’:</p>
 <pre class="terminal">
-<code>git remote add origin <url-to-repo>
+<code>git remote add origin [url-to-repo]
 git branch -M main
-git push -u origin main&lt;/code&gt;
-&lt;/pre&gt;
+git push -u origin main</code>
+</pre>
 
-To run the last command, you will be prompted to log in to Github. Instead of entering your account password, you will need to [create a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). The minimum permissions necessary to send local changes to Github is 'Contents'.
+<p>To run the last command, you will be prompted to log in to Github. Instead of entering your account password, you will need to <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">create a personal access token</a>. The minimum permissions necessary to send local changes to Github is ‘Contents’.</p>
 
-We can now pull the repository to the University of Waterloo server:
+<p>We can now pull the repository to the University of Waterloo server:</p>
 
 <pre class="terminal">
-<code>ssh <WatIAMid>@linux.math.uwaterloo.ca
+<code>ssh [WatIAMid]@linux.math.uwaterloo.ca
 mkdir public_html
 chmod 2755 public_html # Restrict write access to owner
 cd public_html
-git clone <url-to-repo>
-chmod -R 700 .git # Restrict access to .git to owner&lt;/code&gt;
-&lt;/pre&gt;
+git clone [url-to-repo]
+chmod -R 700 .git # Restrict access to .git to owner</code>
+</pre>
 
-You should see your website at `https://math.uwaterloo.ca/~<WatIAMid>`.
+<p>You should see your website at <code class="language-plaintext highlighter-rouge">https://math.uwaterloo.ca/~[WatIAMid]</code>.</p>
 
-## Updating the website
+<h2 id="updating-the-website">Updating the website</h2>
 
-With the Git repository, it is relatively simple to update the website. After making your changes, build the website and run the following websites in the terminal to commit the changes to the repository:
+<p>With the Git repository, it is relatively simple to update the website. After making your changes, build the website and run the following websites in the terminal to commit the changes to the repository:</p>
 <pre class="terminal">
 <code>git add --all
 git commit -m "<Commit message="">"&lt;/code&gt;
 &lt;/pre&gt;
 
-Use `git push` to push the changes to Github, then you can `ssh <WatIAMid>@linux.math.uwaterloo.ca` as above to connect to the Faculty server, and `git pull` to download and merge the changes from Github.
-</WatIAMid></Commit></code></pre></WatIAMid></url-to-repo></WatIAMid></code></pre></url-to-repo></code></pre>
+Use `git push` to push the changes to Github, then you can `ssh [WatIAMid]@linux.math.uwaterloo.ca` as above to connect to the Faculty server, and `git pull` to download and merge the changes from Github.
+</Commit></code></pre>
 
+</div>
     </body>
 </html>
