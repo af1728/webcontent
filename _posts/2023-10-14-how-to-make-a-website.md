@@ -11,9 +11,8 @@ There are two main options to build your website: all-in-one tools like [Google 
 I used [Jekyll](https://jekyllrb.com), which is not too far off from coding from scratch, but has some nice features that make some aspects easier. I found [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn) to be a great resource for learning HTML, CSS and Javascript.
 
 To ensure the website works on the servers provided by the University of Waterloo, you will need to use relative URLs. On Jekyll this is achieved by adding the following property in the configuration file:
-```
+```yaml
 baseurl: /~[WatIAMid]
-relativeURLs: true
 ```
 
 After building the website, Jekyll will generate some folders in your project. The most important one is the `_site` folder which stores the generated website.
