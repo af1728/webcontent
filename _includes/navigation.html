@@ -1,4 +1,8 @@
 <nav>
-    <a href="/">home</a>
-    <a href="/blog.html">blog</a>
+    <a href="/" {% if page.url == "/" %}style="color: #7a8478"{% endif %}>
+        home
+    </a>
+    <a href="/blog.html" {% if page.url == "/blog.html" %}style="color: #7a8478"{% endif %}>
+        blog
+    </a>
 </nav>
