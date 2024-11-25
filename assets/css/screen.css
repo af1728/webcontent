@@ -59,27 +59,27 @@ a:visited {
     color: var(--purple);
 }
 
-/* || Utilities */
-
-.title {
+header {
     color: var(--red);
     font-weight: bold;
     margin-bottom: 2em;
 }
 
-.title a {
+header a {
     color: var(--red);
     text-decoration: none;
 }
 
-.title a:hover {
+header a:hover {
     color: var(--fg);
 }
 
-.title nav a {
+header nav a {
     color: var(--grey2);
     margin-left: 1em;
 }
+
+/* || Utilities */
 
 .meta {
     color: var(--grey2);
