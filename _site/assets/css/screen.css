@@ -86,6 +86,11 @@ header nav a {
 }
 
 /* || Home */
+address ul {
+    list-style-type: none;
+}
+
+/* || Blog */
 
 ul.posts {
     list-style-type: none;
