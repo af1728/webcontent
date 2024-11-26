@@ -28,7 +28,6 @@ body {
     color: var(--fg);
     font-family: Arial, sans-serif;
     font-size: 110%;
-    width: 42em;
     /* top | right | bottom | left, centres the element */
     margin: 3em auto 2em auto;
     line-height: 1.5; /* minimum value for accessibility */
@@ -95,20 +94,32 @@ header nav a {
     color: var(--grey2);
 }
 
+@media screen and (min-width: 42em) {
+    body {
+        width: 42em;
+    }
+}
+
 /* || Home */
 address {
     display: flex;
+    flex-flow: wrap;
     align-items: center;
     justify-content: space-evenly;
+}
+
+figcaption {
+    text-align: center;
 }
 
 address ul {
     list-style-type: none;
 }
 
-/*address div {
-    flex: 1;
-}*/
+blockquote cite {
+    text-align: end;
+    display: block;
+}
 
 /* || Blog */
 
