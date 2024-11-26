@@ -60,6 +60,10 @@ a:visited {
     color: var(--purple);
 }
 
+a:active {
+    color: var(--red);
+}
+
 header {
     color: var(--red);
     font-weight: bold;
@@ -75,6 +79,11 @@ header a:hover {
     color: var(--fg);
 }
 
+/* Make navigation bar inline */
+header nav {
+    display: inline;
+}
+
 header nav a {
     color: var(--grey2);
     margin-left: 1em;
@@ -87,9 +96,19 @@ header nav a {
 }
 
 /* || Home */
+address {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 address ul {
     list-style-type: none;
 }
+
+/*address div {
+    flex: 1;
+}*/
 
 /* || Blog */
 
