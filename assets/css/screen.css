@@ -5,6 +5,7 @@
     --bg0: #1e2326;
     --bg1: #2e383c;
     --red: #e67e80;
+    --green: #a7c080;
     --blue: #7fbbb3;
     --purple: #d699b6;
     --fg: #d3c6aa;
@@ -66,7 +67,7 @@ header {
 }
 
 header a {
-    color: var(--red);
+    color: var(--green);
     text-decoration: none;
 }
 
