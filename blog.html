@@ -1,14 +1,16 @@
 ---
 title: AJ Fong's Website - Blog
 ---
-<h1>Blog Posts</h1>
+<section>
+    <h2>Blog Posts</h1>
 
-<ul role="list" class="posts">
-    {% for post in site.posts %}
-    <li>
-        <span>{{post.date | date_to_string}}</span>
-        &raquo;
-        <a href="{{post.url | relative_url}}">{{post.title}}</a>
-    </li>
-    {% endfor %}
-</ul>
+    <ul role="list" class="posts">
+        {% for post in site.posts %}
+        <li>
+            <span>{{post.date | date_to_string}}</span>
+            &raquo;
+            <a href="{{post.url | relative_url}}">{{post.title}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
