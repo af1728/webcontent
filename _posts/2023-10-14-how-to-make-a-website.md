@@ -62,7 +62,7 @@ You should see your website at `https://math.uwaterloo.ca/~[WatIAMid]`.
 With the Git repository, it is relatively simple to update the website. After making your changes, build the website and run the following websites in the terminal to commit the changes to the repository:
 <pre class="terminal">
 <code>git add --all
-git commit -m "<Commit message>"</code>
+git commit -m "[Commit message]"</code>
 </pre>
 
 Use `git push` to push the changes to Github, then you can `ssh [WatIAMid]@linux.math.uwaterloo.ca` as above to connect to the Faculty server, and `git pull` to download and merge the changes from Github.
