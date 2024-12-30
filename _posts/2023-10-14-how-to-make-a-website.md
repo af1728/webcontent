@@ -49,8 +49,10 @@ We can now pull the repository to the University of Waterloo server:
 mkdir public_html
 chmod 2755 public_html # Restrict write access to owner
 cd public_html
-git clone [url-to-repo]
-chmod -R 700 .git # Restrict access to .git to owner</code>
+git clone [url-to-repo] .
+chmod -R 700 .git # Restrict access to .git to owner
+cd ..
+chmod -R 2755 public_html # Give read access to all</code>
 </pre>
 
 You should see your website at `https://math.uwaterloo.ca/~[WatIAMid]`.

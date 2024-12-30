@@ -77,8 +77,10 @@ git push -u origin main</code>
 mkdir public_html
 chmod 2755 public_html # Restrict write access to owner
 cd public_html
-git clone [url-to-repo]
-chmod -R 700 .git # Restrict access to .git to owner</code>
+git clone [url-to-repo] .
+chmod -R 700 .git # Restrict access to .git to owner
+cd ..
+chmod -R 2755 public_html # Give read access to all</code>
 </pre>
 
 <p>You should see your website at <code class="language-plaintext highlighter-rouge">https://math.uwaterloo.ca/~[WatIAMid]</code>.</p>
