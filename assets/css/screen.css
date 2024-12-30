@@ -214,6 +214,7 @@ ul.posts span {
 .exam_info {
     display: flex;
     margin-bottom: auto;
+    font-size: 110%;
 }
 
 .exam_info ul {
