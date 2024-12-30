@@ -47,6 +47,10 @@ p {
     line-height: 1.5; /* minimum value for accessibilty */
 }
 
+hr {
+    margin: 1em 0;
+}
+
 a {
     color: var(--blue);
 }
