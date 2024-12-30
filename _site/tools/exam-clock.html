@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <title>AJ Fong's Website - Exam Clock</title>
+        <link rel="stylesheet" href=/~a24fong/assets/css/screen.css>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+    </head>
+    <body>
+        <header>
+            <a href=/~a24fong/>
+                AJ Fong
+            </a>
+            <nav>
+    
+    <a href="/~a24fong/">
+        home
+    </a>
+    
+    <a href="/~a24fong/blog.html">
+        blog
+    </a>
+    
+    <a href="/~a24fong/tools.html">
+        tools
+    </a>
+    
+</nav>
+        </header>
+        <article>
+            <section>
+    <h1>Exam Clock</h1>
+    <ul class="form" role="list">
+        <li>
+            <label for="centre_number">
+                Location (eg centre/room number): 
+            </label>
+            <input type="text" id="centre_number" class="centre_number_field"/>
+        </li>
+        <li>
+            <label for="subject_title">
+                Subject title and code: 
+            </label>
+            <input type="text" id="subject_title" class="subject_title_field" />
+        </li>
+        <li>
+            <label for="paper_number">
+                Paper number (eg Quiz 1): 
+            </label>
+            <input type="text" id="paper_number" class="paper_number_field" />
+        </li>
+        <li>
+            <label for="starting_time">
+                Starting time: 
+            </label>
+            <input type="time" id="starting_time" class="starting_time_field" />
+        </li>
+        <li>
+            <label for="finishing_time">
+                Finishing time: 
+            </label>
+            <input type="time" id="finishing_time" class="finishing_time_field" />
+        </li>
+        <input type="submit" value="Start" id="start_button" class="start_button btn" />
+    </ul>
+</section>
+
+<section class="clock_area">
+    <div class="time">
+        <div class="time_hours"></div>
+        <div class="time_minutes"></div>
+        <div class="time_seconds"></div>
+    </div>
+    <div class="exam_info">
+        <ul class="exam_info_left" role="list">
+            <li class="centre_number"></li>
+            <li class="subject_title"></li>
+            <li class="paper_number"></li>
+        </ul>
+        <ul class="exam_info_right" role="list">
+            <li class="date"></li>
+            <li class="starting_time"></li>
+            <li class="finishing_time"></li>
+        </ul>
+    </div>
+</section>
+
+<script type="module" src="/~a24fong/assets/js/clock.js"></script>
+        </article>
+    </body>
+</html>

@@ -27,7 +27,7 @@ body {
     background-color: var(--bg0);
     color: var(--fg);
     font-family: Arial, sans-serif;
-    font-size: 110%;
+    font-size: 110%; /* default: 16px */
     /* top | right | bottom | left, centres the element */
     margin: 3em auto 2em auto;
     line-height: 1.5; /* minimum value for accessibility */
@@ -53,10 +53,6 @@ a {
 
 a:hover {
     color: var(--fg);
-}
-
-a:visited {
-    color: var(--purple);
 }
 
 a:active {
@@ -138,6 +134,19 @@ ul.posts span {
     font-size: 80%;
 }
 
+.btn {
+    color: var(--fg);
+    background-color: var(--bg0);
+    border-color: var(--grey0);
+    font-size: smaller;
+    padding: 0 2px;
+    margin-bottom: 0;
+    border-width: 1px;
+    border-style: solid;
+    line-height: 1.4;
+    border-radius: 4px;
+}
+
 /* || Posts */
 
 #post pre {
@@ -174,4 +183,41 @@ ul.posts span {
 
 #related h2 {
     margin-bottom: 1em;
+}
+
+/* || Clock */
+
+.form {
+    list-style-type: none;
+}
+
+.clock_area {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    font-size: 10vw;
+    flex-flow: row nowrap;
+    font-family: Monaco, "Courier New", monospace;
+    text-align: center;
+    margin-top: auto;
+}
+
+.exam_info {
+    display: flex;
+    margin-bottom: auto;
+}
+
+.exam_info ul {
+    flex: 1;
+    list-style-type: none;
+    font-size: 110%;
+}
+
+.exam_info_right {
+    text-align: right;
 }
